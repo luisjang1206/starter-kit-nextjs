@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Logo } from "@/components/shared/logo";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { MobileNav } from "@/components/layout/mobile-nav";
+import { Button } from "@/components/ui/button";
 import { mainNavItems } from "@/config/site";
 
 export function SiteHeader() {
@@ -26,6 +27,9 @@ export function SiteHeader() {
 
         {/* Actions */}
         <div className="flex items-center gap-2">
+          <Button variant="outline" size="sm" asChild className="hidden md:inline-flex">
+            <Link href="/login">Login</Link>
+          </Button>
           <ThemeToggle />
           <MobileNav items={mainNavItems} />
         </div>

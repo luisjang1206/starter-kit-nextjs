@@ -52,6 +52,11 @@ export function MobileNav({ items }: MobileNavProps) {
               {item.title}
             </Link>
           ))}
+          <Button asChild className="mt-4">
+            <Link href="/login" onClick={() => setOpen(false)}>
+              Login
+            </Link>
+          </Button>
         </nav>
       </SheetContent>
     </Sheet>
