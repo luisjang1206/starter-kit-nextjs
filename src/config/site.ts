@@ -4,8 +4,10 @@ export const siteConfig: SiteConfig = {
   name: "Starter Kit",
   description:
     "A modern, extensible Next.js 16 starter kit with Tailwind CSS v4 and ShadcnUI",
+  // TODO: Update with your actual site URL
   url: "https://example.com",
   links: {
+    // TODO: Update with your actual social links
     github: "https://github.com",
     twitter: "https://twitter.com",
   },
